@@ -1,1 +1,95 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Derek's Blog</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="./index.html">Derek's Blog</a></h1>
+      <h2>
+        <a href="https://www.linkedin.com/in/yihang80" target="_blank">
+          <img alt="Qries" src="./images/linkedin.png"
+          width=20 height=20>
+        </a>
+        <a href="https://github.com/yyuan80" target="_blank">
+          <img alt="Qries" src="./images/GitHub-Mark-Light-64px.png"
+          width=20 height=20>
+        </a>
+      </h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./aboutMe.html">About Me</a></li>
+        <li><a href="./academic.html">Academic Projects</a></li>
+        <li><a href="./hobbies.html">My Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="./images/main.JPG" alt="">
+        <figcaption>
+          <h2>About Me</h2>
+          <p>I recently graduated from Seneca's Computer Programmer program with two Co-op terms as 
+            Software Developer and Production Support Analyst. Through my education and co-op terms I had learned a lot.</p>
+          <footer class="more"><a href="./aboutMe.html">Read More &raquo;</a></footer>
+        </figcaption>
+      </figure>
+    </section>
+    
+    <!-- main content -->
+    <div id="homepage">
+      <!-- services area -->
+      <section id="services" class="clear">
+        <!-- article 1 -->
+        <h1>Academic Projects</h1>
+        <article class="one_third">
+          <h2>Employee Data Management System</h2>
+          <img src="images/data.jpg" alt="">
+          <p>This academic project ultilized Angular to create the front end of a Employee Data Management System. This system can perform 
+            Create, Read, Update and Delete(CRUD) to the employee information database which hosts on MongoDB.
+          </p>
+          <footer class="more"><a href="./academic.html">Read More &raquo;</a></footer>
+        </article>
+        <!-- article 2 -->
+        <article class="one_third">
+          <h2>Simulated Assembly Line</h2>
+          <img src="images/assembly.jpg" alt="">
+          <p>This academic project uses Object-oriented programming principles to create a simulated assembly line 
+            that can simulate how items are moving through the assembly line from different 
+            orders to orders by using linked lists, file I/O, smart pointers, dynamic allocation/deallocation, 
+            templates and lambda expression.</p>
+          <footer class="more"><a href="./academic.html">Read More &raquo;</a></footer>
+        </article>
+        <!-- article 3 -->
+        <article class="one_third lastbox">
+          <h2>Monte Carlo method</h2>
+          <img src="images/pi.jpg" alt="">
+          <p>This project uses C++ and CUDA to convert serial code of the Monte Carlo method that uses
+            to estimate Pi to parallel version of the algorithm. After the parallelization, the result
+            is significant.</p>
+          <footer class="more"><a href="./academic.html">Read More &raquo;</a></footer>
+        </article>
+      </section>
+
+    </div>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Yihang(Derek) Yuan</p>
+  </footer>
+</div>
+</body>
+</html>

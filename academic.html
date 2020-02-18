@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Academic Projects</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="./index.html">Derek's Blog</a></h1>
+      <h2>
+        <a href="https://www.linkedin.com/in/yihang80" target="_blank">
+          <img alt="Qries" src="./images/linkedin.png"
+          width=20 height=20>
+        </a>
+        <a href="https://github.com/yyuan80" target="_blank">
+          <img alt="Qries" src="./images/GitHub-Mark-Light-64px.png"
+          width=20 height=20>
+        </a>
+      </h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./aboutMe.html">About Me</a></li>
+        <li><a href="./academic.html">Academic Projects</a></li>
+        <li><a href="./hobbies.html">My Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <div class="row">
+      <p>
+        School projects    
+      </p>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <h1>Monte Carlo Pi</h1>
+          <b>Parallel programming</b>
+        </button>
+        <div class="contentC">            
+          <p>
+            <a href="https://github.com/yyuan80/monteCarloPi" target="_blank">Link to Github</a><br>
+            This project used C++, CUDA, and Monte Carlo method to calculate Pi A Monte Carlo Simulation is a way of approximating the value of a function where calculating the actual value is difficult or impossible.<br><br>
+    
+            It uses random sampling to define constraints on the value and then makes a sort of "best guess." Compare processing speed by using CPU(serial) and GPU(parallel) By parallelizing the serial version of the algorithm, 
+            we can see an immediate improvement of performance.<br><br>
+          </p>
+        </div>    
+      </div>
+
+      <div class="column">
+        <button type="button" class="collapsible">
+          <h1>Angular project</h1>
+          <b>Web development</b>
+        </button>
+        <div class="contentC">         
+          <p>
+            <a href="https://github.com/yyuan80/angularProject" target="_blank">Link to Github</a><br>
+            This academic project used Angular to create the front-end of a Employee management system that could perform Create, Read, Update and Delete(CRUD) in the employee database.<br><br>  
+          </p>
+        </div>         
+      </div>
+
+    </div>    
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Yihang(Derek) Yuan</p>
+  </footer>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+</body>
+</html>

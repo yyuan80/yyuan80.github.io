@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>About Me</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</head>
+<body>
+  <div class="wrapper row1">
+    <header id="header" class="clear">
+      <div id="hgroup">
+        <h1><a href="./index.html">Derek's Blog</a></h1>
+        <h2>
+          <a href="https://www.linkedin.com/in/yihang80" target="_blank">
+            <img alt="Qries" src="./images/linkedin.png"
+            width=20 height=20>
+          </a>
+          <a href="https://github.com/yyuan80" target="_blank">
+            <img alt="Qries" src="./images/GitHub-Mark-Light-64px.png"
+            width=20 height=20>
+          </a>
+        </h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./aboutMe.html">About Me</a></li>
+          <li><a href="./academic.html">Academic Projects</a></li>
+          <li><a href="./hobbies.html">My Hobbies</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+<!-- content -->
+      
+
+
+<div class="wrapper row2">
+  
+    <div id="container" class="clear">
+      <div class="row">
+        <p>My journey of studying computer programming started in September 2017 at Seneca College. 
+          Through more than two years of learning and 8 months of co-op, I had learned a lot. <br><br>       
+          My passion for computer did not start in 2017 but started way back when I was at 13 years old, 
+          as I really enjoyed playing video games, but some of the games required high performing PC, with limited budget, 
+          buying a branded PC sometimes just could not meet the games’ requirement, 
+          so I started to learn how to build a customized PC. Throughout the years, I had built several PCs for me and my friends. 
+          <a href="./hobbies.html">Here is the link to my bobbies</a>
+          <br><br>
+          During my college study, the skills they taught me were really practical, including Object-oriented programming, Web development, System design, etc. 
+          Also, the academic projects they gave me to do helped me to understand the knowledge from classes more profoundly. 
+          <a href="./academic.html">Here is the link to the projects I did in school.</a>
+          <br><br>
+          In May 2019, I started my co-op with Bank of Montreal as Production Support Analyst, I learned a lot about how Database Administrators work in a production environment, and how was it like in a big corporation. <br><br>
+          In September 2019, I switched a team in BMO, to development where I was placed in the data loading team in the Risk department. The experience was amazing, and I learned how as a software developer worked in an Agile environment.<br><br>     
+        </p>
+
+        <div class="column">
+          <button type="button" class="collapsible">
+            <h1>Production Support Analyst</h1>
+            <b>May 2019 - August 2019</b>
+          </button>
+          <div class="contentC">            
+            <p>
+              In May 2019, I started my co-op term with Bank of Montreal as Production Support Analyst at Scarborough Compute Complex, it was my very first IT professional experience. 
+              I was in the database team of the Production department, and our team was responsible for more than 3,000 databases. 
+              My jobs are mainly about 3 parts including operational support, generate reports, and create support documents. <br><br>
+      
+              The major role for me is to provide operational support. I resolved many service tasks and incidents that were raised through the ticket management system, 
+              ServiceNow. Let’s say if software developers want to require some data that’s in the production server, 
+              they have to raise a ticket in ServiceNow, and my team then will grab the data for them, it might seem redundant, 
+              but access control is very important, especially in a bank. Also, I verified backup activities for databases, drives and file systems, 
+              to make sure everything work as planned.<br><br>
+      
+              Another task for me was to create weekly reports for the Production department to review critical issues and system health. In ServiceNow, 
+              every incident was recorded, so at the end of every week, I extracted the incidents’ data for that week and created reports for the department director and managers. 
+              The data extracted from ServiceNow was not easy to read, so I used pivot tables and charts to make it easier to understand and identified frequently repeat issues. <br><br>      
+            </p>
+          </div>    
+        </div>
+
+        <div class="column">
+          <button type="button" class="collapsible">
+            <h1>Software Developer</h1>
+            <b>September 2019 - December 2019</b>
+          </button>
+          <div class="contentC">         
+            <p>
+              Followed by my first co-op term, I was able to successfully secure my second co-op term with BMO again. 
+              This time, my role was Software Developer and the location had been moved to First Canadian Place, this was what I really wanted, to develop something. <br><br>  
+      
+              I was placed in the data loading team in the Risk department. Every day, there will be so much market risk data that needed to be loaded into databases, 
+              so my team was responsible for the development and maintenance of a data loading tool. The tool was able to extract, transform and load (ETL) market risk data.<br><br> 
+      
+              The first two weeks were a little challenging to me, as I needed to learn how to use the ETL tools, and also, I needed to understand the existing codes in a short period of time, 
+              but as time went by, I was getting better and better. This time, besides the daily data loading tasks, 
+              I had two projects mainly; to enhance and maintain the ETL tools and to troubleshoot/debug the loading status page.<br><br> 
+      
+              The ETL tools were written in a combination of Java, Bash Script, and SQL queries. My very first contribution was an enhancement task. 
+              The ETL tools were used by multiple teams in the Risk department, but the tools at that time could only be used by one user at the same time. 
+              My task was to make it could be used by multiple users. To do that, I updated the Bash Scripts that launches the tools, 
+              updated all the Linux profiles for each team that will be using it, 
+              and finally updated Java property files to make the tools avoided the location conflicts in the shared drive.<br><br>
+      
+              Another task I worked on was to expand and update in the existing database schema for new requirements. 
+              At first, I thought this would be an easy task, it seemed only need to update and add columns, but I was wrong. 
+              The databases had multiple tiers of staging tables; 
+              it would take the input data went through different filtering processes to make sure there wouldn’t be any bad data to corrupt the existing databases. 
+              After I understood how this process worked, I was able to add and update the columns along with the filtering processes for each staging tables successfully.<br><br>
+      
+              After each task I worked on, I tested it on our dev databases, if it passed the test, I would update Jira and Bitbucket to track each task and for code review.<br><br>
+      
+              My second project is to troubleshoot and debug the data loading status page’s display error caused by database migration from Netezza SQL to PostgreSQL. 
+              The page was essentially a website that logs all the data loading tasks information, for example, how long did the job run, was there any error during the loading, 
+              which user executed the job, and etc. Since the Risk department wanted to move from Netezza to Greenplum, 
+              there were a lot of the Netezza functions would not work on the Greenplum. My job was to correct all those bugs.<br><br>
+      
+              To debug, I had to go through the logs for the page, after I found out which function was causing the problem, 
+              I need to find the description of the Netezza function and replace it with the Greenplum version. After I tested it on my machine, 
+              I would update the Jira, and commit to the Bitbucket for code review. Once the senior member in my team approved my changes, 
+              I would write my new findings on my team’s Confluence page for future references.<br><br>
+      
+              Another thing I did for this project was to set up different versions of the status page for the development team and the production team, 
+              which I had to modify the JavaScript files that used Grunt, to active/disable certain functions of the page.<br><br>
+      
+              Before my term ends, I created detailed instructions for new hires about how to use the ETL tools to ease their onboarding and save some time for the senior members.<br><br>
+            </p>
+          </div>         
+        </div>
+
+      </div>    
+    </div>
+  
+  
+</div>
+
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Yihang(Derek) Yuan</p>
+  </footer>
+</div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
